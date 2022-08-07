@@ -154,8 +154,8 @@
   padding: 1rem 0;
   width: 100%;
   display: flex;
-  position: relative;
   z-index: -1;
+  position: relative;
 }
 .snapfood-left {
   width: 50%;
@@ -182,30 +182,75 @@
   opacity: 0.8;
 }
 
-.perimtion {
+.access {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 330px;
+  width: 100%;
+  padding: 3rem 12rem;
+}
+.access-detail {
+  width: 30%;
+  padding: 0 2rem;
+}
+.access-detail h4 {
+  margin-top: 1rem;
+}
+.access-detail p {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 15px;
+}
+.access-image {
+  background-color: rgb(247, 245, 245);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+.section-register {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f5f8;
+  margin-top: 15rem;
+}
+.detail-register {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  width: 30%;
-  position: absolute;
-  right: 7rem;
-  top: 25rem;
+  padding: 2rem 12rem;
 }
-.p-image {
-  width: 40%;
-  background-color: rgb(248, 245, 245);
-  border-radius: 25px;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
+.detail-register h1 {
+  text-align: center;
+  font-size: 2rem;
 }
-.p-image img {
+.detail-register p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.detail-register button {
+  width: 220px;
+  height: 40px;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  background-color: rgb(0, 209, 112);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.detail-register video {
+  margin-top: 2rem;
+  border-radius: 10px;
   width: 100%;
 }
-.perimtion h4 {
-  font-size: 1rem;
-}
-.perimtion p {
-  width: 50%;
-}
-

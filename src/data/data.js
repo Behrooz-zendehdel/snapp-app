@@ -16,9 +16,7 @@ import bors from "../assets/Service Icon.png";
 import sevicebus from "../assets/Moving.png";
 import pay from "../assets/pay.svg";
 import snappticket from "../assets/ticket-icon.svg";
-import hand from "../assets/hand.png";
-import rocket from "../assets/rocket.png";
-import cost from "../assets/cost.png";
+
 
 export const datahome = [
   {
@@ -137,26 +135,26 @@ export const datahome = [
   },
 ];
 
-export const access = [
-  {
-    id: 1,
-    img: hand,
-    title: "آسان",
-    detail:
-      "برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.",
-  },
-  {
-    id: 2,
-    img: rocket,
-    title: "سریع",
-    detail:
-      "قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.",
-  },
-  {
-    id: 3,
-    img: cost,
-    title: "به صرفه",
-    detail:
-      "سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند تا بهترین خدمات را با قیمتی منطقی دریافت کنید.",
-  },
-];
+// export const access = [
+//   {
+//     id: 1,
+//     img: hand,
+//     title: "آسان",
+//     detail:
+//       "برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.",
+//   },
+//   {
+//     id: 2,
+//     img: rocket,
+//     title: "سریع",
+//     detail:
+//       "قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.",
+//   },
+//   {
+//     id: 3,
+//     img: cost,
+//     title: "به صرفه",
+//     detail:
+//       "سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند تا بهترین خدمات را با قیمتی منطقی دریافت کنید.",
+//   },
+// ];

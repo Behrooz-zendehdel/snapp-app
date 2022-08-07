@@ -7,13 +7,13 @@ import snapp from "../assets/snapp-pwa.png";
 import sibapp from "../assets/sibapp-badge-white.png";
 import iapps from "../assets/iApps.png";
 import "./home.css";
-import { access, datahome } from "../data/data";
+import { datahome } from "../data/data";
 import { Link } from "react-router-dom";
 import snappfood from "../assets/snappfood.jpg";
 import snappfoodleft from "../assets/snappfood-left.jpg";
 import hand from "../assets/hand.png";
-import Permistion from "../hooks/Permistion";
-
+import rocket from "../assets/rocket.png";
+import cost from "../assets/cost.png";
 const HomePage = () => {
   return (
     <Layout>
@@ -47,6 +47,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
       <section>
         <div className="social-download">
           <div className="social-media">
@@ -68,6 +69,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
       <section>
         <div className="snapp-details">
           <h1>یک اپلیکیشن ، برای تمام نیازها</h1>
@@ -106,7 +108,72 @@ const HomePage = () => {
               فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)، رزرو
               هتل، پرداخت قبض و خرید شارژ استفاده کنید.
             </p>
-            <Permistion />
+          </div>
+
+          <div className="access">
+            <div className="access-detail">
+              <div className="access-image">
+                <img src={hand} alt="" />
+              </div>
+              <h4>آسان</h4>
+              <p>
+                برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد
+                اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
+              </p>
+            </div>
+            <div className="access-detail">
+              <div className="access-image">
+                <img src={rocket} alt="" />
+              </div>
+              <h4>سریع</h4>
+              <p>
+                قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک
+                می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.
+              </p>
+            </div>
+            <div className="access-detail">
+              <div className="access-image">
+                <img src={cost} alt="" />
+              </div>
+              <h4>به صرفه</h4>
+              <p>
+                سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند
+                تا بهترین خدمات را با قیمتی منطقی دریافت کنید.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="section-register">
+          <div className="detail-register">
+            <h1>در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.</h1>
+            <p>
+              بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل ثبت‌نام
+              را اینترنتی انجام دهید
+            </p>
+            <button>ثبت نام رانندگان</button>
+
+            <video
+              controls
+              autoPlay
+              loop
+              preload="none"
+              poster="../assets/video/Capture.png"
+              type="video/mp4"
+              src="https://web-cdn.snapp.ir/snapp-website/videos/homepage/jazb-ranande.mp4"
+            ></video>
+
+            <div className="service-register">
+              <div className="deatil-service-register">
+                <div className="deatil-service-register-img">
+                  <img src="" alt="" />
+                </div>
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
