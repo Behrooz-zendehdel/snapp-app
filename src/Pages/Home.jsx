@@ -76,7 +76,7 @@ const HomePage = () => {
           <h1>یک اپلیکیشن ، برای تمام نیازها</h1>
           <div className="details-delivery">
             {datahome.map((home) => (
-              <Link to={} style={{ textDecoration: "none" }}>
+              <Link to='/' style={{ textDecoration: "none" }}>
                 <div className="line" key={home.id}>
                   <img src={home.img} alt="" />
                   <div className="line-detail">

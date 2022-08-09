@@ -10,15 +10,19 @@ import AboutUs from "./Pages/AboutUs";
 import Organization from "./Pages/Organization";
 import Blogs from "./Pages/Blogs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import routes from "./routes";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {routes.map((route) => (
-          <Route {...route} />
-        ))}
+        <Route path="/" element={<Home />} />
+        <Route path="jobs" element={<Jobs />} />
+        <Route path="blogs" element={<Blogs />} />
+        <Route path="clubs" element={<Clubs />} />
+        <Route path="organizition" element={<Organization />} />
+        <Route path="register" element={<Register />} />
+        <Route path="contactus" element={<ContactUs />} />
+        <Route path="aboutus" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
