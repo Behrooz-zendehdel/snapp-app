@@ -210,7 +210,7 @@
 }
 .section-register {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #f2f5f8;
   margin-top: 15rem;
 }
@@ -253,4 +253,30 @@
   margin-top: 2rem;
   border-radius: 10px;
   width: 100%;
+  border: 1px solid #333;
+}
+
+.mazaia {
+  padding: 3rem 12rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.detail-mazaia {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 48%;
+}
+.mazaia-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mazaia-img img {
+  width: 100px;
 }

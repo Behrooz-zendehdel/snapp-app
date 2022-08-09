@@ -7,13 +7,14 @@ import snapp from "../assets/snapp-pwa.png";
 import sibapp from "../assets/sibapp-badge-white.png";
 import iapps from "../assets/iApps.png";
 import "./home.css";
-import { datahome } from "../data/data";
+import { access, datahome } from "../data/data";
 import { Link } from "react-router-dom";
 import snappfood from "../assets/snappfood.jpg";
 import snappfoodleft from "../assets/snappfood-left.jpg";
 import hand from "../assets/hand.png";
 import rocket from "../assets/rocket.png";
 import cost from "../assets/cost.png";
+import income1 from "../assets/income1.png";
 const HomePage = () => {
   return (
     <Layout>
@@ -157,23 +158,25 @@ const HomePage = () => {
 
             <video
               controls
-              autoPlay
               loop
               preload="none"
               poster="../assets/video/Capture.png"
-              type="video/mp4"
               src="https://web-cdn.snapp.ir/snapp-website/videos/homepage/jazb-ranande.mp4"
             ></video>
+          </div>
 
-            <div className="service-register">
-              <div className="deatil-service-register">
-                <div className="deatil-service-register-img">
-                  <img src="" alt="" />
+          <div className="mazaia">
+            {access.map((acc) => (
+              <div className="detail-mazaia">
+                <div className="mazaia-img">
+                  <img src={acc.img} alt="" />
                 </div>
-                <h3></h3>
-                <p></p>
+                <div className="mazaia-header">
+                  <h3>{acc.title}</h3>
+                  <p>{acc.detail}</p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
