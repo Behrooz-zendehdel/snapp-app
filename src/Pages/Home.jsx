@@ -167,7 +167,7 @@ const HomePage = () => {
 
           <div className="mazaia">
             {access.map((acc) => (
-              <div className="detail-mazaia">
+              <div className="detail-mazaia" key={acc.id}>
                 <div className="mazaia-img">
                   <img src={acc.img} alt="" />
                 </div>

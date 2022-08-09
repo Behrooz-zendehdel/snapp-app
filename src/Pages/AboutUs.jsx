@@ -4,7 +4,7 @@ import Layout from "../Layout/Layout";
 const AboutUs = () => {
   return (
     <Layout>
-      <h1>this is aboutus </h1>
+      <h2>this is aboutus </h2>
     </Layout>
   );
 };
