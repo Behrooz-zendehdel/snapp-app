@@ -76,13 +76,15 @@ const HomePage = () => {
           <h1>یک اپلیکیشن ، برای تمام نیازها</h1>
           <div className="details-delivery">
             {datahome.map((home) => (
-              <div className="line" key={home.id}>
-                <img src={home.img} alt="" />
-                <div className="line-detail">
-                  <h5>{home.title}</h5>
-                  <p>{home.detail}</p>
+              <Link to={} style={{ textDecoration: "none" }}>
+                <div className="line" key={home.id}>
+                  <img src={home.img} alt="" />
+                  <div className="line-detail">
+                    <h5>{home.title}</h5>
+                    <p>{home.detail}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -160,7 +162,6 @@ const HomePage = () => {
               controls
               loop
               preload="none"
-              poster="../assets/video/Capture.png"
               src="https://web-cdn.snapp.ir/snapp-website/videos/homepage/jazb-ranande.mp4"
             ></video>
           </div>
