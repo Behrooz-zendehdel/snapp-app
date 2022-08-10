@@ -124,7 +124,8 @@
 }
 
 .line:hover {
-  width: 300px;
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
 }
 
 .line img {

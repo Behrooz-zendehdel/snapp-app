@@ -80,23 +80,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* <section>
-        
-
-            <div className="details-delivery">
-              {datahome.map((home) => (
-                <div className="line" key={home.id}>
-                  <img src={home.img} alt="" />
-                  <div className="line-detail">
-                    <h5>{home.title}</h5>
-                    <p>{home.detail}</p>
-                  </div>
-                </div>
-              ))}
-          
-          </div>
-        </section> */}
-
         <section>
           <div className="snapfood">
             <a href="https://food.snapp.ir/?utm_source=snapp&utm_medium=slider&utm_campaign=new-landing">
