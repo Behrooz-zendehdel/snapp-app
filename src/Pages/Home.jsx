@@ -7,7 +7,7 @@ import snapp from "../assets/snapp-pwa.png";
 import sibapp from "../assets/sibapp-badge-white.png";
 import iapps from "../assets/iApps.png";
 import "./home.css";
-import { access, datahome } from "../data/data";
+import { access } from "../data/data";
 import { Link } from "react-router-dom";
 import snappfood from "../assets/snappfood.jpg";
 import snappfoodleft from "../assets/snappfood-left.jpg";
@@ -15,6 +15,7 @@ import hand from "../assets/hand.png";
 import rocket from "../assets/rocket.png";
 import cost from "../assets/cost.png";
 import income1 from "../assets/income1.png";
+import HomeApp from "./HomeApp";
 const HomePage = () => {
   return (
     <>
@@ -75,21 +76,26 @@ const HomePage = () => {
         <section>
           <div className="snapp-details">
             <h1>یک اپلیکیشن ، برای تمام نیازها</h1>
-            <div className="details-delivery">
-              {datahome.map((home) => (
-                <Link to="/" style={{ textDecoration: "none" }}>
-                  <div className="line" key={home.id}>
-                    <img src={home.img} alt="" />
-                    <div className="line-detail">
-                      <h5>{home.title}</h5>
-                      <p>{home.detail}</p>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <HomeApp />
           </div>
         </section>
+
+        {/* <section>
+        
+
+            <div className="details-delivery">
+              {datahome.map((home) => (
+                <div className="line" key={home.id}>
+                  <img src={home.img} alt="" />
+                  <div className="line-detail">
+                    <h5>{home.title}</h5>
+                    <p>{home.detail}</p>
+                  </div>
+                </div>
+              ))}
+          
+          </div>
+        </section> */}
 
         <section>
           <div className="snapfood">
