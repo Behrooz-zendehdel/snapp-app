@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logosnapp.svg";
 import "./navigation.css";
-import { Rings } from "react-loader-spinner";
 
 const Navigation = () => {
   return (
@@ -38,15 +37,7 @@ const Navigation = () => {
             </li>
           </ul>
 
-          <Rings
-            height="60"
-            width="60"
-            radius="9"
-            color="#21aa58"
-            ariaLabel="three-dots-loading"
-            wrapperStyle
-            wrapperClass
-          />
+          <span className="updater">در حال بروزرسانی</span>
         </nav>
       </header>
     </>

@@ -24,3 +24,8 @@
   color: #333;
 }
 
+.updater {
+  padding: 1rem;
+  background-color: orange;
+  border-radius: 15px;
+}
