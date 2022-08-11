@@ -18,6 +18,7 @@ import supporttaxi from "../assets/supporttaxi.png";
 import insertimg1 from "../assets/insertimg1.jpg";
 import insertimg2 from "../assets/insertimg2.jpg";
 import insertimg3 from "../assets/insertimg3.jpg";
+import more from "../assets/more.svg";
 import "./taxi.css";
 const Taxi = () => {
   const [go, setGo] = useState(true);
@@ -255,6 +256,24 @@ const Taxi = () => {
             </div>
           </div>
         </div>
+        <div className="more">
+          <div className="more-right">
+            <img src={more} alt="" />
+          </div>
+          <div className="more-left">
+            <h3>ثبت نام در تاکسی اینترنتی اسنپ!</h3>
+            <p>
+              شما نیز می‌توانید به ناوگان اسنپ ملحق شوید .از مزایای همکاری و ثبت
+              نام در تاکسی اینترنتی اسنپ می‌توان به درآمد تضمینی و ساعت کاری
+              دلخواه اشاره کرد .بدون نیاز به مراجعه‌ى حضوری، تمام مراحل ثبت‌نام
+              را اینترنتی انجام دهید.
+            </p>
+            <button className="btns green">بیشتر بدانید</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="question"></div>
       </section>
     </Layout>
   );
