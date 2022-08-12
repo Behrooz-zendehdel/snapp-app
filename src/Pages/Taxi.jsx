@@ -152,13 +152,34 @@ const Taxi = () => {
         <div className="insert">
           <div className="insert-taxi">
             <div className="insert-btn">
-              <button className="btns active" onClick={goHandler}>
+              <button
+                className="btns"
+                style={{
+                  backgroundColor: go ? "#06d170" : "",
+                  color: go ? "white" : "",
+                }}
+                onClick={goHandler}
+              >
                 ثبت
               </button>
-              <button className="btns" onClick={goBackHandler}>
+              <button
+                className="btns"
+                style={{
+                  backgroundColor: goBack ? "#06d170" : "",
+                  color: goBack ? "white" : "",
+                }}
+                onClick={goBackHandler}
+              >
                 رفت وبرگشت
               </button>
-              <button className="btns" onClick={delayHandler}>
+              <button
+                className="btns"
+                style={{
+                  backgroundColor: delay ? "#06d170" : "",
+                  color: delay ? "white" : "",
+                }}
+                onClick={delayHandler}
+              >
                 توقف
               </button>
             </div>
