@@ -18,9 +18,13 @@ import supporttaxi from "../assets/supporttaxi.png";
 import insertimg1 from "../assets/insertimg1.jpg";
 import insertimg2 from "../assets/insertimg2.jpg";
 import insertimg3 from "../assets/insertimg3.jpg";
+import taxi from "../assets/Taxi.svg";
 import more from "../assets/more.svg";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import "./taxi.css";
+
+import order from "../assets/order.jpg";
+
 const Taxi = () => {
   const [go, setGo] = useState(true);
   const [goBack, setGoBack] = useState(false);
@@ -396,6 +400,21 @@ const Taxi = () => {
               ""
             )}
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="order">
+          <img src={order} alt="" style={{ width: "100%", height: "400px" }} />
+        </div>
+        <div className="detail-order">
+          <img src={taxi} alt="" />
+          <h4>تاکسی اینترنتی اسنپ، سریع و مطمئن</h4>
+          <p>
+            هم‌اکنون سرویس درخواست تاکسی اسنپ، از طریق سیستم‌عامل‌های مختلف
+            موبایل و وب اپلیکیشن به راحتی در دسترس شماست. بهترین خدمات تاکسی
+            اینترنتی را با سوپر اپلیکیشن اسنپ تجربه کنید.
+          </p>
+          <button>درخواست تاکسی</button>
         </div>
       </section>
     </Layout>

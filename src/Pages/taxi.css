@@ -186,3 +186,33 @@
 .answer p {
   line-height: 2;
 }
+
+.detail-order {
+  margin-top: -25rem;
+  padding: 5rem 12rem;
+}
+.detail-order img {
+  width: 50px;
+  height: 50px;
+}
+
+.detail-order h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.detail-order p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-top: 2rem;
+  width: 50%;
+}
+.detail-order button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
