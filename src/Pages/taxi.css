@@ -110,7 +110,7 @@
   flex-direction: column;
   background-color: rgb(225, 247, 234);
   padding: 1rem;
-  height: 250px;
+  height: auto;
   width: 94%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -122,6 +122,7 @@
 }
 .news p {
   line-height: 2;
+  height: auto;
 }
 .more {
   display: flex;
