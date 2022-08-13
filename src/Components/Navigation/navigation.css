@@ -29,3 +29,35 @@
   background-color: orange;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .navigation-nav {
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: static;
+  }
+  .navigation-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation-nav ul li {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .navigation-nav ul li:hover {
+    background-color: #21aa58;
+    color: #fff;
+  }
+  .navigation-nav ul li:first-child {
+    display: none;
+  }
+  .updater {
+    display: block;
+    text-align: center;
+  }
+}

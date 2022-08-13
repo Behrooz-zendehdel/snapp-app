@@ -22,7 +22,6 @@ import taxi from "../assets/Taxi.svg";
 import more from "../assets/more.svg";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import "./taxi.css";
-
 import order from "../assets/order.jpg";
 
 const Taxi = () => {

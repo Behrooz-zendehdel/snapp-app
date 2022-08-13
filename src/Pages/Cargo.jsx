@@ -1,26 +1,11 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 import { useState } from "react";
-import taxiheader from "../assets/taxi-header.jpg";
 import googleplay from "../assets/google-play-badge.png";
 import bazaar from "../assets/bazaar.png";
 import snapp from "../assets/snapp-pwa.png";
 import sibapp from "../assets/sibapp-badge-white.png";
 import iapps from "../assets/iApps.png";
-import handtaxi from "../assets/handtaxi.jpg";
-import snappfood from "../assets/snappfood.jpg";
-import snappfoodleft from "../assets/snappfood-left.jpg";
-import hand from "../assets/hand.png";
-import rocket from "../assets/rocket.png";
-import cost from "../assets/cost.png";
-import handtaxi2 from "../assets/handtaxi2.png";
-import cartaxi from "../assets/cartaxi.png";
-import supporttaxi from "../assets/supporttaxi.png";
-import insertimg1 from "../assets/insertimg1.jpg";
-import insertimg2 from "../assets/insertimg2.jpg";
-import insertimg3 from "../assets/insertimg3.jpg";
-import taxi from "../assets/Taxi.svg";
-import more from "../assets/more.svg";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import cargoimg from "../assets/cargoimg.jpg";
 import "./taxi.css";
@@ -28,7 +13,6 @@ import cargo1 from "../assets/cargo1.jpg";
 import cargo2 from "../assets/cargo2.png";
 import cargo3 from "../assets/cargo3.png";
 import motor3 from "../assets/motor3.png";
-import order from "../assets/order.jpg";
 import insertcargo from "../assets/insertcargo.jpg";
 import insertcargo1 from "../assets/insertcargo1.jpg";
 import insertcargo2 from "../assets/insertcargo2.jpg";
@@ -61,6 +45,7 @@ const Cargo = () => {
     setGoBack(false);
     setDelay(true);
   };
+
   return (
     <Layout>
       <section style={{ marginTop: "100px" }}>
@@ -123,6 +108,8 @@ const Cargo = () => {
               شهروندان عزیز است.
             </p>
           </div>
+          
+
 
           <div className="access" style={{ marginTop: "5rem" }}>
             <div className="access-detail">
