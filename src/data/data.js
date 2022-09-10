@@ -20,6 +20,14 @@ import income1 from "../assets/income1.png";
 import income2 from "../assets/income2.png";
 import income3 from "../assets/income3.png";
 import income4 from "../assets/income4.png";
+import bakery from "../assets/bakery.png";
+import icecream from "../assets/icecream.png";
+import cafe2 from "../assets/cafe2.png";
+import sweets from "../assets/sweets.png";
+import restaurant from "../assets/restaurant.png";
+import protein2 from "../assets/protein2.png";
+import nuts from "../assets/nuts.png";
+import fruit from "../assets/fruit.png";
 
 // export const datahome = [
 //   {
@@ -166,5 +174,49 @@ export const access = [
     title: "کار‌فیکس",
     detail:
       " باشگاه رانندگان اسنپ به‌تازگی سرویس جدید «اسنپ کارفیکس» را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه‌اندازی کرده است.",
+  },
+];
+
+export const groupings = [
+  {
+    id: 1,
+    img: bakery,
+    name: "نانوایی",
+    to: "/homeApp/food/bakery",
+  },
+  {
+    id: 2,
+    img: icecream,
+    name: "آبمیوه و بستنی",
+  },
+  {
+    id: 3,
+    img: cafe2,
+    name: "کافه",
+  },
+  {
+    id: 4,
+    img: sweets,
+    name: "شیرینی",
+  },
+  {
+    id: 5,
+    img: restaurant,
+    name: "رستوران",
+  },
+  {
+    id: 6,
+    img: protein2,
+    name: "پروتیین",
+  },
+  {
+    id: 7,
+    img: nuts,
+    name: "آجیل",
+  },
+  {
+    id: 8,
+    img: fruit,
+    name: "میوه",
   },
 ];

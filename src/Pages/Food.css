@@ -1,0 +1,39 @@
+.food-btn {
+  background-color: #ff00a6;
+}
+.food-right {
+  background-color: #ff00a6;
+}
+.social-food {
+  background-color: #f5f5f6;
+  margin-top: -5.5rem;
+}
+.grouping {
+  padding: 1rem 5rem;
+}
+.grouping h2 {
+  text-align: center;
+}
+.title-grouping {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-grouping a {
+  text-decoration: none;
+}
+
+.cart-name-group {
+  width: 120px;
+  height: 150px;
+  background-color: #f5f5f6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+.cart-name-group span {
+  color: #000;
+  font-size: 20px;
+  margin-top: 1rem;
+}
