@@ -65,7 +65,7 @@ const Food = () => {
           <div className="title-grouping">
             {groupings.map((grouping) => (
           <div className="cart-grouping" key={grouping.id}>
-                <Link to=''>
+                <Link to={`${grouping.pathname}`}>
                   <div className="cart-name-group">
                     <img src={grouping.img} alt={grouping.name} />
                     <span>{grouping.name}</span>
@@ -78,7 +78,7 @@ const Food = () => {
       </section>
 
       <section>
-        
+
       </section>
     </Layout>
   );
