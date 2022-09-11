@@ -30,6 +30,7 @@ import ServiceBus from "./Pages/ServiceBus";
 import Pay from "./Pages/Pay";
 import SnappTicket from "./Pages/SnappTicket";
 import Bakery from "./Pages/Bakery";
+import Grouping from "./Pages/Grouping";
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/homeApp/cargo" element={<Cargo />} />
         <Route path="/homeApp/food" element={<Food />} />
         <Route path="/homeApp/food/bakery" element={<Bakery />} />
+        <Route path="/homeApp/food/grouping" element={<Grouping />} />
         <Route path="/homeApp/market" element={<Market />} />
         <Route path="/homeApp/experss" element={<Experss />} />
         <Route path="/homeApp/ticket" element={<Ticket />} />

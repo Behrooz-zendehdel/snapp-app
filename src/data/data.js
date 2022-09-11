@@ -28,7 +28,18 @@ import restaurant from "../assets/restaurant.png";
 import protein2 from "../assets/protein2.png";
 import nuts from "../assets/nuts.png";
 import fruit from "../assets/fruit.png";
-
+import irani from "../assets/irani.jpeg";
+import fastfood from "../assets/fastfood.jpeg";
+import kabab from "../assets/kabab.jpeg";
+import pitza from "../assets/pitza.jpeg";
+import burger from "../assets/burger.jpeg";
+import sandwich from "../assets/sandwich.jpeg";
+import fry from "../assets/fry.jpeg";
+import pasta from "../assets/pasta.jpeg";
+import salad from "../assets/salad.jpeg";
+import sea from "../assets/sea.jpeg";
+import intl from "../assets/sea.jpeg";
+import gilaki from "../assets/gilaki.jpeg";
 // export const datahome = [
 //   {
 //     id: 1,
@@ -225,5 +236,80 @@ export const groupings = [
     img: fruit,
     name: "میوه",
     pathname: "/homeApp/food",
+  },
+];
+
+export const tfoods = [
+  {
+    id: 1,
+    name: "ایرانی",
+    img: irani,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 2,
+    name: "فست فود",
+    img: fastfood,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 3,
+    name: "کباب",
+    img: kabab,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 4,
+    name: "پیتزا",
+    img: pitza,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 5,
+    name: "برگر",
+    img: burger,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 6,
+    name: "ساندویچ",
+    img: sandwich,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 7,
+    name: "سوخاری",
+    img: fry,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 8,
+    name: "پاستا",
+    img: pasta,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 9,
+    name: "سالاد",
+    img: salad,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 10,
+    name: "دریایی",
+    img: sea,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 11,
+    name: "بین الملی",
+    img: intl,
+    pathname: "/homeApp/food/grouping",
+  },
+  {
+    id: 12,
+    name: "گیلانی",
+    img: gilaki,
+    pathname: "/homeApp/food/grouping",
   },
 ];

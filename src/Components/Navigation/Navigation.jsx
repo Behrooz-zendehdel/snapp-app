@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logosnapp.svg";
 import "./navigation.css";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const Navigation = () => {
   return (
@@ -36,8 +37,10 @@ const Navigation = () => {
               <Link to="/contactus">تماس با ما</Link>
             </li>
           </ul>
-
-          <span className="updater">در حال بروزرسانی</span>
+          <span className="updater">
+            درحال بروزرسانی
+            <PulseLoader color="#06d170" />
+          </span>
         </nav>
       </header>
     </>

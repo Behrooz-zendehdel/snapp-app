@@ -8,7 +8,7 @@ import sibapp from "../assets/sibapp-badge-white.png";
 import iapps from "../assets/iApps.png";
 import image_food from "../assets/image-food.jpeg";
 import { Link } from "react-router-dom";
-import { groupings } from "../data/data";
+import { groupings, tfoods } from "../data/data";
 
 const Food = () => {
   return (
@@ -39,7 +39,7 @@ const Food = () => {
         </div>
       </section>
       <section>
-        <div className="social-download social-food" >
+        <div className="social-download social-food">
           <div className="social-media">
             <a href="https://play.google.com/store/apps/details?id=cab.snapp.passenger.play&referrer=appmetrica_tracking_id%3D1036046929106097450%26ym_tracking_id%3D3146307706900293541">
               <img src={googleplay} alt="GooglePlay" />
@@ -61,10 +61,10 @@ const Food = () => {
       </section>
       <section>
         <div className="grouping">
-            <h2>دسته بندی ها</h2>
+          <h2>دسته بندی ها</h2>
           <div className="title-grouping">
             {groupings.map((grouping) => (
-          <div className="cart-grouping" key={grouping.id}>
+              <div className="cart-grouping" key={grouping.id}>
                 <Link to={`${grouping.pathname}`}>
                   <div className="cart-name-group">
                     <img src={grouping.img} alt={grouping.name} />
@@ -78,7 +78,21 @@ const Food = () => {
       </section>
 
       <section>
-
+        <div className="types-of-food">
+          <h2>انواع غذاها</h2>
+          <div className="types-of-food-detail">
+            {tfoods.map((tfood) => (
+              <div className="cart-types-of-food-image" key={tfood.id}>
+                <Link to={`${tfood.pathname}`}>
+                  <img src={tfood.img} alt={tfood.name} />
+                  <div className="cart-types-of-food-name">
+                    <span>{tfood.name}</span>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </Layout>
   );
