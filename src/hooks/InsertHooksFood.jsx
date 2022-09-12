@@ -41,7 +41,7 @@ const InsertHooksFood = () => {
               <button
                 className="btns"
                 style={{
-                  backgroundColor: go ? "#06d170" : "",
+                  backgroundColor: go ? "#ff00a6" : "",
                   color: go ? "white" : "",
                 }}
                 onClick={goHandler}
@@ -51,7 +51,7 @@ const InsertHooksFood = () => {
               <button
                 className="btns"
                 style={{
-                  backgroundColor: goBack ? "#06d170" : "",
+                  backgroundColor: goBack ? "#ff00a6" : "",
                   color: goBack ? "white" : "",
                 }}
                 onClick={goBackHandler}
@@ -61,7 +61,7 @@ const InsertHooksFood = () => {
               <button
                 className="btns"
                 style={{
-                  backgroundColor: delay ? "#06d170" : "",
+                  backgroundColor: delay ? "#ff00a6" : "",
                   color: delay ? "white" : "",
                 }}
                 onClick={delayHandler}
@@ -222,23 +222,47 @@ const InsertHooksFood = () => {
                 </li>
               </ul>
             </div>
+            <div className="articles">
+              <div className="articles_snapp">
+                <h2>مقالات مرتبط</h2>
+                <button
+                  style={{
+                    border: "1px solid #21aa58",
+                    padding: "15px 22px",
+                    color: "#21aa58",
+                    cursor: "pointer",
+                    borderRadius: "10px",
+                    background: "transparent",
+                    fontSize: "17px",
+                  }}
+                >
+                  مقالات بیشتر
+                </button>
+              </div>
+              <div className="articles_list">
+                <ul>
+                  <li>
+                    <a href="#">طرز تهیه هزاری ماهی خوشمزه جنوبی ساده و سریع</a>
+                  </li>
+                  <li>
+                    <a href="#">طرز تهیه خوراک صدف، متفاوت و فراموش‌نشدنی</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      طرز تهیه کوفته انار دون مجلسی با طعمی بی‌نظیر
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">طرز تهیه سس انار خانگی با آب انار و رب انار</a>
+                  </li>
+                  <li>
+                    <a href="#">طرز تهیه شربت بیدمشک؛ خوشمزه و خنک</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
-        <div className="more">
-          <div className="more-right">
-            <img src={more} alt="" />
-          </div>
-          <div className="more-left">
-            <h3>ثبت نام در تاکسی اینترنتی اسنپ!</h3>
-            <p>
-              شما نیز می‌توانید به ناوگان اسنپ ملحق شوید .از مزایای همکاری و ثبت
-              نام در تاکسی اینترنتی اسنپ می‌توان به درآمد تضمینی و ساعت کاری
-              دلخواه اشاره کرد .بدون نیاز به مراجعه‌ى حضوری، تمام مراحل ثبت‌نام
-              را اینترنتی انجام دهید.
-            </p>
-            <button className="btns green">بیشتر بدانید</button>
-          </div>
-        </div>
       </section>
     </>
   );

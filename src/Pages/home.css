@@ -313,6 +313,34 @@
 .logo-popular-restorant img {
   width: 50px;
 }
+.articles {
+  margin-top: 3rem;
+}
+.articles_snapp {
+  padding: 1rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.articles_list {
+  display: flex;
+}
+.articles_list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 12rem;
+  list-style: none;
+}
+.articles_list ul li {
+  margin: 1rem 0;
+}
+.articles_list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 200;
+}
 
 @media screen and (max-width: 768px) {
   .header-home {

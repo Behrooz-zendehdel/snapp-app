@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import insertimg1 from "../assets/insertimg1.jpg";
-import insertimg2 from "../assets/insertimg2.jpg";
-import insertimg3 from "../assets/insertimg3.jpg";
-import more from "../assets/more.svg";
+import insertimg1 from "../../assets/insertimg1.jpg";
+import insertimg2 from "../../assets/insertimg2.jpg";
+import insertimg3 from "../../assets/insertimg3.jpg";
+import more from "../../assets/more.svg";
 
 const InsertHooks = () => {
   const [go, setGo] = useState(true);

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import insertbike1 from "../assets/insertbike1.jpg";
-import insertbike2 from "../assets/insertbike2.jpg";
-import insertbike3 from "../assets/insertbike3.jpg";
-import securitybike from "../assets/securitybike.jpg";
-import more from "../assets/more.svg";
+import insertbike1 from "../../assets/insertbike1.jpg";
+import insertbike2 from "../../assets/insertbike2.jpg";
+import insertbike3 from "../../assets/insertbike3.jpg";
+import securitybike from "../../assets/securitybike.jpg";
 
-const InsertHooks = () => {
+const InsertHooksBike = () => {
   const [go, setGo] = useState(true);
   const [goBack, setGoBack] = useState(false);
   const [delay, setDelay] = useState(false);
@@ -174,4 +173,4 @@ const InsertHooks = () => {
   );
 };
 
-export default InsertHooks;
+export default InsertHooksBike;

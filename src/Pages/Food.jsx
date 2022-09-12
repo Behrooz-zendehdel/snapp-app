@@ -13,10 +13,11 @@ import hand_food from "../assets/hand_food.png";
 import rocket_food from "../assets/rocket_food.png";
 import cost_food from "../assets/cost_food.png";
 import snappfood_food from "../assets/snappfood_food.jpeg";
-import insert_image_food from "../assets/insert_image-food.jpeg";
-import insert_image_food2 from "../assets/insert_image_food2.jpeg";
-import insert_image_food3 from "../assets/insert_image_food3.jpeg";
+
 import InsertHooksFood from "../hooks/InsertHooksFood";
+import QuestionHooksFood from "../hooks/QuestionHooksFood";
+import snappfood_order from "../assets//snappfood-order.jpeg";
+import snappfood_food_detail from "../assets/snappfood_food_detail.svg";
 
 const Food = ({}) => {
   return (
@@ -153,6 +154,26 @@ const Food = ({}) => {
       </section>
 
       <InsertHooksFood />
+      <QuestionHooksFood />
+      <section>
+        <div className="order">
+          <img
+            src={snappfood_order}
+            alt=""
+            style={{ width: "100%", height: "400px" }}
+          />
+        </div>
+        <div className="detail-order">
+          <img src={snappfood_food_detail} alt="" />
+          <h4>سفارش آنلاین غذا با اسنپ!</h4>
+          <p>
+            هم‌اکنون خدمات سفارش غذا، از طریق سیستم‌عامل‌های مختلف موبایل و وب
+            اپلیکیشن به راحتی در دسترس شماست. خرید اینترنتی غذا را با سوپر
+            اپلیکیشن اسنپ تجربه کنید.
+          </p>
+          <button>غذا سفارش دهید</button>
+        </div>
+      </section>
     </Layout>
   );
 };

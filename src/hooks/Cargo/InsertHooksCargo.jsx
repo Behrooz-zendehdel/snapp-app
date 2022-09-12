@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-import insertcargo from "../assets/insertcargo.jpg";
-import insertcargo1 from "../assets/insertcargo1.jpg";
-import insertcargo2 from "../assets/insertcargo2.jpg";
-import securitycargo from "../assets/securitycargo.jpg";
+import insertcargo from "../../assets/insertcargo.jpg";
+import insertcargo1 from "../../assets/insertcargo1.jpg";
+import insertcargo2 from "../../assets/insertcargo2.jpg";
+import securitycargo from "../../assets/securitycargo.jpg";
 
 const InsertHooksCargo = () => {
   const [go, setGo] = useState(true);
