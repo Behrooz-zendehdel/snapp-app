@@ -293,6 +293,26 @@
 .mazaia-header {
   line-height: 2;
 }
+.popular-restorant {
+  text-align: center;
+  margin-top: 3rem;
+}
+.logo-popular-restorant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.logo-popular-restorant ul {
+  display: flex;
+}
+.logo-popular-restorant ul li {
+  list-style-type: none;
+  padding: 1rem 3rem;
+}
+.logo-popular-restorant img {
+  width: 50px;
+}
 
 @media screen and (max-width: 768px) {
   .header-home {
@@ -451,7 +471,8 @@
     align-items: center;
     padding: 2rem 0;
   }
-  .mazaia-header h3,p{
+  .mazaia-header h3,
+  p {
     text-align: center;
   }
 }
