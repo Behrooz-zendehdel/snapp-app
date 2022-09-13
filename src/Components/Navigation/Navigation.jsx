@@ -1,46 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logosnapp.svg";
 import "./navigation.css";
-import PulseLoader from "react-spinners/PulseLoader";
-
+import { FiMenu } from "react-icons/fi";
+import { MdOutlineClose } from "react-icons/md";
 const Navigation = () => {
+  const [click, setClick] = useState(false);
+  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
   return (
     <>
-      <header>
+      <header className="container">
         <nav className="navigation-nav">
-          <ul>
-            <li style={{ marginTop: "10px" }}>
-              <Link to="/">
-                <img src={logo} alt="logo" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/jobs">فرصت های شغلی</Link>
-            </li>
-            <li>
-              <Link to="/blogs">بلاگ</Link>
-            </li>
-            <li>
-              <Link to="/clubs">باشگاه رانندگان</Link>
-            </li>
-            <li>
-              <Link to="/register">ثبت نام راننده اسنپ</Link>
-            </li>
-            <li>
-              <Link to="/organizition">پنل سازمانی</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">درباره ما</Link>
-            </li>
-            <li>
-              <Link to="/contactus">تماس با ما</Link>
-            </li>
-          </ul>
-          <span className="updater">
-            درحال بروزرسانی
-            <PulseLoader color="#06d170" />
-          </span>
+          <img src={logo} alt="logo" />
+          <nav>
+            <ul className="listmenu">
+              <li onClick={closeMobileMenu}>
+                <Link to="/jobs">فرصت های شغلی</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/blogs">بلاگ</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/clubs">باشگاه رانندگان</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/register">ثبت نام راننده اسنپ</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/organizition">پنل سازمانی</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/aboutus">درباره ما</Link>
+              </li>
+              <li onClick={closeMobileMenu}>
+                <Link to="/contactus">تماس با ما</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="menu" onClick={handleClick}>
+            {click ? (
+              <MdOutlineClose size={"2rem"} className="hidden" />
+            ) : (
+              <FiMenu size={"2rem"} className="show" />
+            )}
+          </div>
         </nav>
       </header>
     </>
