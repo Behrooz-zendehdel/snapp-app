@@ -1,17 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import insert_image_food from "../assets/insert_image-food.jpeg";
-import insert_image_food2 from "../assets/insert_image_food2.jpeg";
-import insert_image_food3 from "../assets/insert_image_food3.jpeg";
-import more from "../assets/more.svg";
-import shila from "../assets/Shila.png";
-import Perperook from "../assets/Perperook.png";
-import Baguette from "../assets/Baguette.png";
-import Hani from "../assets/Hani.png";
-import Procalory from "../assets/Procalory.png";
-import Raftari from "../assets/Raftari.png";
-import BurgerLand from "../assets/BurgerLand.png";
-import Bergur1385 from "../assets/Bergur1385.png";
+import insert_image_food from "../../assets/insert_image-food.jpeg";
+import insert_image_food2 from "../../assets/insert_image_food2.jpeg";
+import insert_image_food3 from "../../assets/insert_image_food3.jpeg";
+import more from "../../assets/more.svg";
+import shila from "../../assets/Shila.png";
+import Perperook from "../../assets/Perperook.png";
+import Baguette from "../../assets/Baguette.png";
+import Hani from "../../assets/Hani.png";
+import Procalory from "../../assets/Procalory.png";
+import Raftari from "../../assets/Raftari.png";
+import BurgerLand from "../../assets/BurgerLand.png";
+import Bergur1385 from "../../assets/Bergur1385.png";
 
 const InsertHooksFood = () => {
   const [go, setGo] = useState(true);

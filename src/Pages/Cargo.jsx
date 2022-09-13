@@ -7,8 +7,12 @@ import SiderHooksCargo from "../hooks/Cargo/SiderHooksCargo";
 import OrderHooksCargo from "../hooks/Cargo/OrderHooksCargo";
 import SocialHooksCargo from "../hooks/Bike/SocialHooksBike";
 import "./taxi.css";
+import { useEffect } from "react";
 
 const Cargo = () => {
+  useEffect(() => {
+    document.title = "اسنپ بار - باربری";
+  }, []);
   return (
     <Layout>
       <HeaderHooksCargo />

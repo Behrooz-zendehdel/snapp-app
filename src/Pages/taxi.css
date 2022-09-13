@@ -112,6 +112,12 @@
   background-color: #ff00a6;
   color: #fff;
 }
+.marketsecurity:hover {
+  background-color: blue;
+}
+.marketnews{
+  background-color: rgb(151, 190, 235);
+}
 .news {
   display: flex;
   flex-direction: column;
