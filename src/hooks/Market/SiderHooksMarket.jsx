@@ -20,7 +20,7 @@ const SiderHooksMarket = () => {
         </div>
 
         <div className="access">
-          <div className="access-detail">
+          <div className="access-detail ">
             <div className="access-image">
               <img src={market1} alt="" />
             </div>

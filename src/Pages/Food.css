@@ -73,3 +73,46 @@
 .cart-types-of-food-name {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .grouping {
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .title-grouping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-popular-restorant ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-popular-restorant ul li {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .articles_snapp {
+    display: flex;
+    flex-direction: column;
+  }
+  .articles_snapp h2 {
+    width: 200px;
+  }
+  .articles_snapp button {
+    display: block;
+    width: 300px;
+    margin-top: 2rem;
+  }
+  .articles_list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .articles_list ul li {
+    width: 500px;
+  }
+}

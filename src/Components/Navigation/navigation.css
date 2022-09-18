@@ -1,13 +1,13 @@
 .navigation-nav {
   background-color: #fff;
-  height: 90px;
+  height: 89px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0 10rem;
   position: fixed;
-  top: 0px;
+  top: -1px;
   z-index: 1000;
   overflow: hidden;
 }
@@ -33,6 +33,15 @@
   display: none;
   cursor: pointer;
 }
+.listmenu-mobile {
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 600px) {
   .navigation-nav {
@@ -48,19 +57,10 @@
     right: 0;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-  }
-  ul li {
-    width: 100%;
-    height: 30px;
-    margin: 2px;
-  }
-  .hidden {
-  }
-  .show {
   }
 
   .menu {
     display: block;
   }
+
 }

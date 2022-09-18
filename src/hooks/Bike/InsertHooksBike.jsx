@@ -3,6 +3,7 @@ import insertbike1 from "../../assets/insertbike1.jpg";
 import insertbike2 from "../../assets/insertbike2.jpg";
 import insertbike3 from "../../assets/insertbike3.jpg";
 import securitybike from "../../assets/securitybike.jpg";
+import "../../Pages/taxi.css";
 
 const InsertHooksBike = () => {
   const [go, setGo] = useState(true);
@@ -144,17 +145,7 @@ const InsertHooksBike = () => {
           </div>
           <div className="leftSecurity">
             <div className="imgSecurity">
-              <img
-                src={securitybike}
-                alt=""
-                style={{
-                  width: "500px ",
-                  height: "300px ",
-                  borderTopRightRadius: "10px",
-                  borderTopLeftRadius: "10px",
-                  objectFit: "cover",
-                }}
-              />
+              <img src={securitybike} alt="" style={{ width: "490px" }} />
               <div className="news">
                 <h1>فعال بودن در بیشتر شهرهای کشور</h1>
                 <p>

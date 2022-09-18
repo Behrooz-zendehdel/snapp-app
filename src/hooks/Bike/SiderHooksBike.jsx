@@ -20,7 +20,7 @@ const SiderHooksBike = () => {
         </div>
 
         <div className="access" style={{ marginTop: "5rem" }}>
-          <div className="access-detail">
+          <div className="access-detail  access-top">
             <div className="access-image">
               <img src={motor1} alt="" />
             </div>

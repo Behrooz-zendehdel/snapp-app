@@ -146,17 +146,7 @@ const InsertHooksCargo = () => {
           </div>
           <div className="leftSecurity">
             <div className="imgSecurity">
-              <img
-                src={securitycargo}
-                alt=""
-                style={{
-                  width: "500px ",
-                  height: "300px ",
-                  borderTopRightRadius: "10px",
-                  borderTopLeftRadius: "10px",
-                  objectFit: "cover",
-                }}
-              />
+              <img src={securitycargo} alt="" style={{ width: "490px" }} />
               <div className="news">
                 <h1>امکان انتخاب نوع وانت</h1>
                 <p>

@@ -150,6 +150,7 @@ const InsertHooks = () => {
                 preload="none"
                 poster="https://web-cdn.snapp.ir/snapp-website/images/taxi/taxi-cover.jpg"
                 src="https://web-cdn.snapp.ir/snapp-website/videos/ventures/1Khodro.mp4"
+                style={{ width: "490px" }}
               ></video>
               <div className="news">
                 <h1>خبرهای جدید از تاکسی اینترنتی اسنپ</h1>

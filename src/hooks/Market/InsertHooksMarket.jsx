@@ -148,6 +148,7 @@ const InsertHooksMarket = () => {
                 preload="none"
                 poster="https://web-cdn.snapp.ir/snapp-website/images/market/market-cover.jpg"
                 src="https://web-cdn.snapp.ir/snapp-website/videos/ventures/2Market.mp4"
+                style={{ width: "100%" }}
               ></video>
               <div
                 className="news"
@@ -167,7 +168,6 @@ const InsertHooksMarket = () => {
           </div>
         </div>
       </div>
-    
     </section>
   );
 };

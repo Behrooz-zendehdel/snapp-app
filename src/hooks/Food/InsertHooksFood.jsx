@@ -158,6 +158,7 @@ const InsertHooksFood = () => {
                   preload="none"
                   poster="https://web-cdn.snapp.ir/snapp-website/images/food/food-cover.jpg"
                   src="https://web-cdn.snapp.ir/snapp-website/videos/ventures/3Food.mp4"
+                  style={{ width: "100%" }}
                 ></video>
                 <div className="news" style={{ backgroundColor: "#ff00a613" }}>
                   <h1>سفارش آنلاین غذا در تهران و سراسر کشور</h1>

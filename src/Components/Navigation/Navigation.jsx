@@ -10,11 +10,14 @@ const Navigation = () => {
   const handleClick = () => {
     setClick(!click);
   };
+
   return (
     <>
       <header className="container">
-        <nav className="navigation-nav">
-          <img src={logo} alt="logo" />
+        <div className="navigation-nav">
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
           <nav>
             <ul className="listmenu">
               <li onClick={closeMobileMenu}>
@@ -47,7 +50,7 @@ const Navigation = () => {
               <FiMenu size={"2rem"} className="show" />
             )}
           </div>
-        </nav>
+        </div>
       </header>
     </>
   );

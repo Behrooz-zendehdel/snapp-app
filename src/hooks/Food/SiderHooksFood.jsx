@@ -7,7 +7,7 @@ const SiderHooksFood = () => {
   return (
     <section>
       <div className="sider">
-        <div className="snapfood-left">
+        <div className="snapfood-left" style={{ marginTop: "-15px" }}>
           <img src={snappfood_food} alt="" />
         </div>
         <div className="snapfood-right">
