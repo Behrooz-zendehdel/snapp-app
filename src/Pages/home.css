@@ -197,7 +197,7 @@
   padding: 3rem 12rem;
 }
 .access-detail {
-  width: 30%;
+  width: 33%;
   padding: 0 2rem;
 }
 .access-detail h4 {
@@ -213,9 +213,13 @@
   border-radius: 25px;
   display: flex;
   justify-content: center;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
 }
 .access-image img {
   width: 100%;
+  object-fit: cover;
 }
 .section-register {
   width: 100%;

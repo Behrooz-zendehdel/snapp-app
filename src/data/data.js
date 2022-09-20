@@ -40,6 +40,18 @@ import salad from "../assets/salad.jpeg";
 import sea from "../assets/sea.jpeg";
 import intl from "../assets/sea.jpeg";
 import gilaki from "../assets/gilaki.jpeg";
+import experss_1 from "../assets/experss-1.jpeg";
+import experss_2 from "../assets/experss-2.jpeg";
+import experss_3 from "../assets/experss-3.jpeg";
+import experss_4 from "../assets/experss-4.jpeg";
+import experss_5 from "../assets/experss-5.jpeg";
+import experss_6 from "../assets/experss-6.jpeg";
+import experss_7 from "../assets/experss-7.jpeg";
+import experss_8 from "../assets/experss-8.jpeg";
+import experss_9 from "../assets/experss-9.jpeg";
+import experss_10 from "../assets/experss-10.jpeg";
+import experss_11 from "../assets/experss-11.jpeg";
+import experss_12 from "../assets/experss-12.jpeg";
 // export const datahome = [
 //   {
 //     id: 1,
@@ -311,5 +323,80 @@ export const tfoods = [
     name: "گیلانی",
     img: gilaki,
     pathname: "/homeApp/food/grouping",
+  },
+];
+
+export const Experss = [
+  {
+    id: "1",
+    name: "تنقلات",
+    img: experss_1,
+    pathname: "",
+  },
+  {
+    id: "2",
+    name: "لبنیات و بستنی",
+    img: experss_2,
+    pathname: "",
+  },
+  {
+    id: "3",
+    name: "نوشیدنی",
+    img: experss_3,
+    pathname: "",
+  },
+  {
+    id: "4",
+    name: "خواروبار و انواع نان",
+    img: experss_4,
+    pathname: "",
+  },
+  {
+    id: "5",
+    name: "آرایشی و بهداشتی",
+    img: experss_5,
+    pathname: "",
+  },
+  {
+    id: "6",
+    name: "کنسرو و غذای آماده",
+    img: experss_6,
+    pathname: "",
+  },
+  {
+    id: "7",
+    name: "پروتیٔن و تخم مرغ",
+    img: experss_7,
+    pathname: "",
+  },
+  {
+    id: "8",
+    name: "خانه وآشپزخانه",
+    img: experss_8,
+    pathname: "",
+  },
+  {
+    id: "9",
+    name: "چاشنی و مواد افزودنی غذا",
+    img: experss_9,
+    pathname: "",
+  },
+  {
+    id: "10",
+    name: "شیرینی و دسر",
+    img: experss_10,
+    pathname: "",
+  },
+  {
+    id: "11",
+    name: "آجیل و خشکبار",
+    img: experss_11,
+    pathname: "",
+  },
+  {
+    id: "12",
+    name: "اداری و نوشت افزار",
+    img: experss_12,
+    pathname: "",
   },
 ];

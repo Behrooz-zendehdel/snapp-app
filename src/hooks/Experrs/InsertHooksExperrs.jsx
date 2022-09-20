@@ -1,31 +1,42 @@
-import React, { useState } from "react";
-import insertbike1 from "../../assets/insertbike1.jpg";
-import insertbike2 from "../../assets/insertbike2.jpg";
-import insertbike3 from "../../assets/insertbike3.jpg";
+import React from "react";
+import insert_experss_1 from "../../assets/insert_experss_1.jpeg";
+import insert_experss_2 from "../../assets/insert_experss_2.jpeg";
+import insert_experss_3 from "../../assets/insert_experss_3.jpeg";
+import insert_experss_4 from "../../assets/insert_experss_4.jpeg";
 import securitybike from "../../assets/securitybike.jpg";
-import "../../Pages/taxi.css";
 
-const InsertHooksBike = () => {
+import { useState } from "react";
+
+const InsertHooksExperrs = () => {
   const [go, setGo] = useState(true);
   const [goBack, setGoBack] = useState(false);
   const [delay, setDelay] = useState(false);
+  const [rahgiri, setRahgiri] = useState(false);
 
   const goHandler = () => {
     setGo(true);
     setGoBack(false);
     setDelay(false);
+    setRahgiri(false);
   };
   const goBackHandler = () => {
     setGo(false);
     setGoBack(true);
     setDelay(false);
+    setRahgiri(false);
   };
   const delayHandler = () => {
     setGo(false);
     setGoBack(false);
     setDelay(true);
+    setRahgiri(false);
   };
-
+  const rahgiriHandler = () => {
+    setGo(false);
+    setGoBack(false);
+    setDelay(false);
+    setRahgiri(true);
+  };
   return (
     <section style={{ marginTop: "100px" }}>
       <div className="insert">
@@ -34,32 +45,42 @@ const InsertHooksBike = () => {
             <button
               className="btns"
               style={{
-                backgroundColor: go ? "#06d170" : "",
+                backgroundColor: go ? "#ff661f" : "",
                 color: go ? "white" : "",
               }}
               onClick={goHandler}
             >
-              درخواست پیک
+              ثبت سفارش
             </button>
             <button
               className="btns"
               style={{
-                backgroundColor: goBack ? "#06d170" : "",
+                backgroundColor: goBack ? "#ff661f" : "",
                 color: goBack ? "white" : "",
               }}
               onClick={goBackHandler}
             >
-              ثبت مقصد
+              پرداخت
             </button>
             <button
               className="btns"
               style={{
-                backgroundColor: delay ? "#06d170" : "",
+                backgroundColor: delay ? "#ff661f" : "",
                 color: delay ? "white" : "",
               }}
               onClick={delayHandler}
             >
-              رفت و برگشت
+              زمان تحویل
+            </button>
+            <button
+              className="btns"
+              style={{
+                backgroundColor: rahgiri ? "#ff661f" : "",
+                color: rahgiri ? "white" : "",
+              }}
+              onClick={rahgiriHandler}
+            >
+              رهگیری{" "}
             </button>
           </div>
 
@@ -67,15 +88,16 @@ const InsertHooksBike = () => {
             <>
               <div className="insert-col">
                 <div className="insert-img">
-                  <img src={insertbike1} alt="" />
+                  <img src={insert_experss_1} alt="" />
                 </div>
                 <div className="insert-deatil">
-                  <h3>درخواست پیک موتوری</h3>
+                  <h3>ثبت سفارش در اسنپ اکسپرس</h3>
                   <p>
-                    در سوپر اپلیکیشن اسنپ، آیکن «اسنپ» برای جابه‌جای مسافر و
-                    آیکن «اسنپ باکس» را برای جابه‌جایی کالا انتخاب کنید. ابتدا
-                    آدرس مبدأ و سپس مقصد خود را تعیین کنید. در ادامه می‌توانید
-                    مبلغ، گزینه‌های سفر و غیره را مشاهده و ویرایش کنید.
+                    برای ثبت سفارش‌، شماره همراه‌تان را در کادر بالای این صفحه
+                    وارد کنید یا وارد اپلیکیشن اسنپ شوید. به بخش سوپرمارکت
+                    بروید، آدرستان را وارد کنید و با انتخاب هرکدام از
+                    فروشگاه‌های محلی یا زنجیره‌ای نزدیک‌تان، از دسته‌بندی‌های
+                    مختلف محصولات خرید کنید.
                   </p>
                 </div>
               </div>
@@ -85,14 +107,15 @@ const InsertHooksBike = () => {
             <>
               <div className="insert-col">
                 <div className="insert-img">
-                  <img src={insertbike2} alt="" />
+                  <img src={insert_experss_2} alt="" />
                 </div>
                 <div className="insert-deatil">
-                  <h3>ثبت مقصدهای مختلف</h3>
+                  <h3>پرداخت آنلاین</h3>
                   <p>
-                    امکان افزودن مقصد‌های بیشتر وجود دارد و می‌توانید چندین بسته
-                    را به مقاصد مختلف در سراسر شهر ارسال کنید. این قابلیت به
-                    کاهش زمان و سرعت ارسال مرسولات کمک می‌کند.
+                    بعد از انتخاب محصولات موردنظرتان، گزینه تکمیل خرید را بزنید
+                    تا صورت‌حساب را ببینید. در این بخش می‌توانید یا آنلاین
+                    پرداخت کنید یا اعتباری. با انتخاب روش پرداخت، خریدتان نهایی
+                    می‌شود و تمام!
                   </p>
                 </div>
               </div>
@@ -102,15 +125,31 @@ const InsertHooksBike = () => {
             <>
               <div className="insert-col">
                 <div className="insert-img">
-                  <img src={insertbike3} alt="" />
+                  <img src={insert_experss_3} alt="" />
                 </div>
                 <div className="insert-deatil">
-                  <h3>درخواست رفت و برگشت</h3>
+                  <h3>زمان تحویل</h3>
                   <p>
-                    ممکن است نیاز باشد بسته‌ای را به مقصدی ارسال کنید و در عوض
-                    از مقصد بسته یا رسید امضا شده را دریافت کنید! برای این کار،
-                    سوپراپ اسنپ امکان رفت و برگشت مسیر را نیز فراهم و در اختیار
-                    شما قرار داده است.
+                    با اسنپ اکسپرس، سفارشتان را کمتر از ۳۰ دقیقه، درب منزل یا
+                    محل کار تحویل بگیرید. فروشگاه‌ها تا زمانی که باز باشند، در
+                    اپلیکیشن هم فعال‌اند.
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
+          {rahgiri && (
+            <>
+              <div className="insert-col">
+                <div className="insert-img">
+                  <img src={insert_experss_4} alt="" />
+                </div>
+                <div className="insert-deatil">
+                  <h3>امکان رهگیری لحظه‌ای سفارش</h3>
+                  <p>
+                    بعد از ثبت سفارش، امکان رهگیری لحظه‌ای آن وجود دارد؛‌ یعنی
+                    می‌توانید مراحل آماده‌سازی تا رسیدن سفارش به دست‌تان را
+                    پیگیری کنید و ببینید که در هر لحظه، بسته ارسالی‌تان کجاست.
                   </p>
                 </div>
               </div>
@@ -164,5 +203,4 @@ const InsertHooksBike = () => {
     </section>
   );
 };
-
-export default InsertHooksBike;
+export default InsertHooksExperrs;
