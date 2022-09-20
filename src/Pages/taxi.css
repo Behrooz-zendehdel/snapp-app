@@ -118,6 +118,14 @@
 .marketnews {
   background-color: rgb(151, 190, 235);
 }
+.experssNews:hover {
+  background-color: #f56b39;
+  color: #fff;
+}
+.newsExperss {
+  background-color: #f56b39;
+}
+
 .news {
   display: flex;
   flex-direction: column;
@@ -273,6 +281,7 @@
   }
   .leftSecurity {
     width: 100%;
+    height: auto;
   }
   .imgSecurity img {
     width: 100%;
